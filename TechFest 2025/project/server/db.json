@@ -1,0 +1,12 @@
+{
+  "eventInfo": {
+    "name": "TechFest 2025",
+    "description": "Join us for the biggest tech event of the year! Featuring workshops, hackathons, tech talks, and networking opportunities.",
+    "startDate": "2025-03-15",
+    "endDate": "2025-03-17",
+    "location": "University Tech Center",
+    "registrationDeadline": "2025-02-28",
+    "logo": "/logo.png"
+  },
+  "registrations": []
+}

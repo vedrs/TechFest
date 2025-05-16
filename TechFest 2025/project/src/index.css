@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styles for ant-design components */
+.custom-steps .ant-steps-item-title {
+  font-weight: 500;
+}
+
+.registration-form .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.registration-form .ant-checkbox-wrapper {
+  align-items: flex-start;
+}
+
+.registration-form .ant-checkbox {
+  top: 2px;
+}
+
+/* Animation for form transitions */
+.ant-form-item,
+.ant-result,
+.ant-card {
+  transition: all 0.3s ease;
+}
+
+.ant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ant-input:focus,
+.ant-select-focused .ant-select-selector {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Card hover effect */
+.ant-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-radio-group,
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .ant-steps-item-title {
+    font-size: 12px;
+  }
+}
